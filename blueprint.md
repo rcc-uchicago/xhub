@@ -53,6 +53,10 @@ The first three reflect the basic resources comprising an experimental setup:
         STUDY_N
             ...
 
+Note the hierarchical structure (*studies > trials > files*) of this directory
+setup.  We want this same hierarchy reflected in our routes as well as the key
+namespace of our buckets.
+
 
 ## Buckets
 
@@ -69,6 +73,9 @@ information about resources:
 * `STORES` - list of SQL-based datastores and their SQL statements
 * `CONFIG` - JSON-config files for `xpub`
 
+Since our resources have a hierarchical structure (*studies > trials > files*),
+we can [reflect this same hierarchy in our key namespace](http://docs.aws.amazon.com/AmazonS3/latest/dev/ListingKeysHierarchy.html). This will make it easy and efficient to retrieve sets of related resources (e.g., all files associated with a particular trial).
+
 
 ## Routes / Handles
 
@@ -78,7 +85,6 @@ A handle is ... [BRIEFLY EXPLAIN W/ LINK TO MORE INFO].
 
 Xhub uses the following routes/handles for storing and retrieving
 information about resources:
-
 
     mux.GET("/", Index)
 

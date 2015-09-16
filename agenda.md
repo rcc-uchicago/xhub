@@ -7,7 +7,7 @@
   * rcc consultants (Richard)
   * rcc developers (Jason)
 
-* review how the resource hierarchy (study > trial > file) reflects ...
+* review how the resource hierarchy (*study > trial > file*) reflects ...
   * directory structure on source systems and midway
   * route structure served by `xhub`
   * bucket namespace used for persistence
@@ -15,7 +15,7 @@
 
 * introduce [buckets](https://github.com/joyrexus/buckets)
 
-* review standalone examples
+* discuss standalone [examples](https://github.com/joyrexus/buckets/tree/master/examples)
 
 
 ## Next Steps
