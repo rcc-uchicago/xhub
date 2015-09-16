@@ -2,7 +2,7 @@
 
 The following is a high-level architectural sketch of **xhub**, a Go-based web service developed by the RCC.  
 
-We consider the main [resources](#Resources) it deals with, the [buckets](#Buckets) in which information about these resources is persisted, and the [routes](#Routes) where this information can be sent/retrieved. 
+We consider the main [resources](https://github.com/rcc-uchicago/xhub/blob/master/blueprint.md#resources) it deals with, the [buckets](https://github.com/rcc-uchicago/xhub/blob/master/blueprint.md#buckets) in which information about these resources is persisted, and the [routes](https://github.com/rcc-uchicago/xhub/blob/master/blueprint.md#routes) where this information can be sent/retrieved. 
 
 Note that we're utilizing [`buckets`](https://github.com/joyrexus/buckets) for data persistence and [`httprouter`](https://github.com/julienschmidt/httprouter) for URL routing.
 
