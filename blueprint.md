@@ -1,13 +1,17 @@
 # Blueprint
 
-The following is a high-level architectural sketch of xhub.
+The following is a high-level architectural sketch of **xhub**, a Go-based web service developed by the RCC.  
 
-We consider the main **resources** it deals with, the **buckets** in which
-information about these resources is persisted, and the **routes** where this
-information can be sent/retrieved. 
+We consider the main [resources](#Resources) it deals with, the [buckets](#Buckets) in which information about these resources is persisted, and the [routes](#Routes) where this information can be sent/retrieved. 
+
+Note that we're utilizing [`buckets`](https://github.com/joyrexus/buckets) for data persistence and [`httprouter`](https://github.com/julienschmidt/httprouter) for URL routing.
 
 
 ## Resources
+
+A resource is ... [BRIEFLY EXPLAIN W/ LINK TO MORE INFO]. 
+
+Xhub deals with the following resources:
 
 * **study**
 * **trial**
@@ -52,6 +56,11 @@ The first three reflect the basic resources comprising an experimental setup:
 
 ## Buckets
 
+A bucket is ... [BRIEFLY EXPLAIN W/ LINK TO MORE INFO]. 
+
+Xhub uses the following buckets for storing and retrieving
+information about resources:
+
 * `META` - namespace for incoming resource metadata
 * `STUDIES` - list of study names for prefix scans in `META`
 * `FILES` - log of file transfers (date, status, location)
@@ -62,6 +71,14 @@ The first three reflect the basic resources comprising an experimental setup:
 
 
 ## Routes / Handles
+
+A route is ... [BRIEFLY EXPLAIN W/ LINK TO MORE INFO]. 
+
+A handle is ... [BRIEFLY EXPLAIN W/ LINK TO MORE INFO]. 
+
+Xhub uses the following routes/handles for storing and retrieving
+information about resources:
+
 
     mux.GET("/", Index)
 
